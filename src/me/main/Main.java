@@ -7,6 +7,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.comandos.ClearChat;
 import me.comandos.Gamemode;
 import me.comandos.Tag;
+import me.comandos.Tp;
+import me.comandos.Tpall;
 import me.eventos.AntiDrop;
 import me.eventos.AntiExplosão;
 import me.eventos.Entrar;
@@ -45,6 +47,8 @@ public class Main extends JavaPlugin {
 		getCommand("gm").setExecutor(new Gamemode());
 		getCommand("cc").setExecutor(new ClearChat());
 		getCommand("tag").setExecutor(new Tag());
+		getCommand("tp").setExecutor(new Tp());
+		getCommand("tpall").setExecutor(new Tpall());
 	}
 
 }
