@@ -4,10 +4,16 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.comandos.ClearChat;
+import me.comandos.Gamemode;
+import me.comandos.Tag;
+import me.eventos.AntiDrop;
+import me.eventos.AntiExplosão;
+import me.eventos.Entrar;
+
 public class Main extends JavaPlugin {
 	
-	public static String tag = "§a§lClose§6§lPvP";
-	public static String tag2 = "§c§lClose2";
+	public static String tag = "§a§lKit§6§lPvP";
 	
 	public static Main instance;
 	public static Main getinstance() {
@@ -26,10 +32,17 @@ public class Main extends JavaPlugin {
 	
 	void RegistrarEventos() {
 		PluginManager pm = Bukkit.getPluginManager();
+		
+		pm.registerEvents(new Entrar(), this);
+		pm.registerEvents(new AntiDrop(), this);
+		pm.registerEvents(new AntiExplosão(), this);
 	}
 	
 	void RegistrarComandos() {
 		
+		getCommand("gm").setExecutor(new Gamemode());
+		getCommand("cc").setExecutor(new ClearChat());
+		getCommand("tag").setExecutor(new Tag());
 	}
 
 }
