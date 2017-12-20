@@ -12,8 +12,6 @@ public class KitAPI {
     	 
     	 if(kit.equalsIgnoreCase("pvp")) {
     		 
-    		 
-    		 
     	 }
     	 
      }
