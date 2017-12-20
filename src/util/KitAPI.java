@@ -1,4 +1,4 @@
-package me.eventos.util;
+package util;
 
 import java.util.ArrayList;
 
