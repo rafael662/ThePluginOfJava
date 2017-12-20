@@ -6,7 +6,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 	
-	public static String tag = "§a§lKit§6§lPvP";
+	public static String tag = "§a§lClose§6§lPvP";
+	public static String tag2 = "§c§lClose2";
 	
 	public static Main instance;
 	public static Main getinstance() {
