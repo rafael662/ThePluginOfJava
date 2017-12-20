@@ -10,6 +10,7 @@ import me.comandos.Tag;
 import me.eventos.AntiDrop;
 import me.eventos.AntiExplosão;
 import me.eventos.Entrar;
+import util.TagChat;
 
 public class Main extends JavaPlugin {
 	
@@ -36,6 +37,7 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new Entrar(), this);
 		pm.registerEvents(new AntiDrop(), this);
 		pm.registerEvents(new AntiExplosão(), this);
+		pm.registerEvents(new TagChat(), this);
 	}
 	
 	void RegistrarComandos() {
