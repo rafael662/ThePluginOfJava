@@ -16,7 +16,6 @@ public class Entrar implements Listener {
 		e.setJoinMessage("§b§l+ §7§l" + p.getName());
 		p.getInventory().clear();
 		p.setHealth(20.0);
-		p.setFoodLevel(20);
 		p.chat("/tag membro");
 		
 		ItemStack kits = new ItemStack(Material.CHEST);
