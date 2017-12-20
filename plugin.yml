@@ -1,0 +1,8 @@
+name: ClosePvP
+main: me.main.Main
+author: Rafael662 & NycollasDev
+version: 1.0
+commands:
+  cc:
+  gm:
+  tag:
